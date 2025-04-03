@@ -34,10 +34,16 @@ function Navbar() {
                     />
                 </Link>
                 <div className='flex items-center space-x-8 mx-3'>
-                    <Link>
+                    <Link 
+                    to={'/'}
+                    className='flex items-center'
+                    >
                         Home
                     </Link>
-                    <Link>
+                    <Link
+                        to={'/services'}
+                        className='flex items-center'
+                    >
                         Services
                     </Link>
                     <Link>

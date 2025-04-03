@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 function Home() {
     return (
@@ -47,7 +48,7 @@ function Home() {
                         <div className='my-3'>
                             <p>Solution for every thinking challenge</p>
                         </div>
-                        <div className='my-3'>
+                        <div className='my-10'>
                             <button className='w-xl bg-[#ffad33] px-2 py-3 rounded-md hover:bg-white hover:text-black transition duration-300'>
                                 Our Services
                             </button>
@@ -56,17 +57,32 @@ function Home() {
                 </div>
             </div>
             {/* we are dynamic we are deverse */}
-            <div className='relative h-[110vh]'>
+            <div className='relative h-[80vh]'>
                 <div className='h-full bg-cover bg-center bg-no-repeat'
                     style={{
                         backgroundImage: `url('/background2.jpg')`
                     }}
                 >
-                   <div className='h-full bg-[#ffad33]/80'>
-
+                   <div className='h-full bg-[#ffad33]/80 flex justify-center items-center'>
+                        <div>
+                            <div className='my-10 text-center'>
+                                <p className='text-6xl text-white'>WE ARE DYNAMIC.</p>
+                            </div>
+                            <div className='my-10 text-center'>
+                                <p className='text-6xl'>WE ARE DIVERSE.</p>
+                            </div>
+                            <div className='my-15 text-center'>
+                                <p className='my-2'>OI is made up of young, passionate, innovative</p>
+                                <p className='my-2'>thinkers coming from various backgrounds.</p>
+                            </div>
+                            <div className='flex justify-center'>
+                                <button className='py-3 px-5 bg-white rounded w-full'>Meet The Crew</button>
+                            </div>
+                        </div>
                    </div>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }
