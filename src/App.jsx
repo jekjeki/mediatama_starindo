@@ -6,6 +6,9 @@ import './App.css'
 import Home from './pages/Home'
 import Navbar from './components/Navbar'
 import Services from './pages/Services'
+import Teams from './pages/Teams'
+import Contact from './pages/Contact'
+import Work from './pages/Work'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +18,9 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/services' element={<Services />} />
+        <Route path='/teams' element={<Teams />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/work' element={<Work />} />
       </Routes>
     </Router>
   )
