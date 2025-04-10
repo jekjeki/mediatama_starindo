@@ -27,7 +27,7 @@ function Navbar() {
     }
 
   return (
-    <div className={`transition-all duration-300 ${isScrolled ? `bg-[#EC710A] shadow-md text-white` : `bg-transparent`}`}>
+    <div className={ `bg-white shadow-md text-black`}>
         <div className='flex justify-between items-center p-4'>
            <div className='flex items-center'>
                 <Link 
@@ -35,7 +35,7 @@ function Navbar() {
                     className='flex items-center'
                 >
                     <img 
-                        src='/untitled2.png'
+                        src='/LG02-black.png'
                         className='h-15'
                     />
                 </Link>
@@ -46,29 +46,24 @@ function Navbar() {
                     to={'/'}
                     className='flex items-center'
                     >
-                        Home
+                        Beranda
                     </Link>
                     <Link
                         to={'/services'}
                         className='flex items-center'
                     >
-                        Services
+                        Layanan
                     </Link>
-                    <Link 
-                    to={'/teams'}
-                    className='flex items-center'
-                    >
-                        Team
-                    </Link>
+                   
                     <Link to={'/work'}
                     className='flex items-center'>
-                        Work
+                        Karya
                     </Link>
                     <Link 
                     to={'/contact'}
                     className='flex items-center'
                     >
-                        Contact
+                        Kontak
                     </Link>
                 </div>
            </div>
@@ -100,35 +95,29 @@ function Navbar() {
                         className='flex items-center'
                         onClick={() => setIsMenuOpen(false)}
                     >
-                        Home
+                        Beranda
                     </Link>
                     <Link
                         to={'/services'}
                         className='flex items-center'
                         onClick={() => setIsMenuOpen(false)}
                     >
-                        Services
+                        Layanan
                     </Link>
-                    <Link 
-                        to={'/teams'}
-                        className='flex items-center'
-                        onClick={() => setIsMenuOpen(false)}
-                    >
-                        Team
-                    </Link>
+                    
                     <Link 
                         to={'/work'}
                         className='flex items-center'
                         onClick={() => setIsMenuOpen(false)}
                     >
-                        Work
+                        Karya
                     </Link>
                     <Link 
                         to={'/contact'}
                         className='flex items-center'
                         onClick={() => setIsMenuOpen(false)}
                     >
-                        Contact
+                        Kontak
                     </Link>
                     
                     {/* Social Media Icons - Mobile */}
